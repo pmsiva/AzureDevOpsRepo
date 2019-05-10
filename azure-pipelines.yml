@@ -19,6 +19,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'AzureDevOpsRepo/App2.Backend/'
+    projects: '/App2.Backend/'
     feedsToUse: 'select'
     versioningScheme: 'off'
