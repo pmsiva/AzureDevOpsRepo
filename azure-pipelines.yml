@@ -19,6 +19,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '/App2.Backend/'
+    projects: '**/*.csproj'
     feedsToUse: 'select'
     versioningScheme: 'off'
