@@ -1,0 +1,14 @@
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\bin\Debug\netcoreapp2.1\App2.Backend.deps.json
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\bin\Debug\netcoreapp2.1\App2.Backend.runtimeconfig.json
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\bin\Debug\netcoreapp2.1\App2.Backend.runtimeconfig.dev.json
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\bin\Debug\netcoreapp2.1\App2.Backend.dll
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\bin\Debug\netcoreapp2.1\App2.Backend.pdb
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.csprojAssemblyReference.cache
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.csproj.CoreCompileInputs.cache
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.RazorAssemblyInfo.cache
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.RazorAssemblyInfo.cs
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.AssemblyInfoInputs.cache
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.AssemblyInfo.cs
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.RazorTargetAssemblyInfo.cache
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.dll
+C:\Working Folder\Learning\Mobile-Development\MyFirstMobileApp\App2.Backend\obj\Debug\netcoreapp2.1\App2.Backend.pdb
