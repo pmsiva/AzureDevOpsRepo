@@ -36,4 +36,4 @@ steps:
     bucketName: 'app2-package'
     sourceFolder: '$(Build.ArtifactStagingDirectory)'
     globExpressions: '**'
-    targetFolder: 'publish'
+    targetFolder: 'publish-app2'
