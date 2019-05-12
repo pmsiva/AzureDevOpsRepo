@@ -29,3 +29,11 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: false
 
+- task: S3Upload@1
+  inputs:
+    awsCredentials: 'App2-S3-Build-Package'
+    regionName: 'ap-southeast-2'
+    bucketName: 'app2-package'
+    sourceFolder: 'Build.ArtifactStagingDirectory'
+    globExpressions: '**'
+    targetFolder: 'publish'
