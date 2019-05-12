@@ -27,7 +27,7 @@ steps:
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: false
+    zipAfterPublish: true
 
 - task: S3Upload@1
   inputs:
@@ -36,4 +36,4 @@ steps:
     bucketName: 'app2-package'
     sourceFolder: '$(Build.ArtifactStagingDirectory)'
     globExpressions: '**'
-    targetFolder: 'publish-app2'
+    targetFolder: 'package-app2'
