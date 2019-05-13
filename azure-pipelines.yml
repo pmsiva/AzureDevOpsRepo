@@ -39,6 +39,7 @@ steps:
       TargetFolder: '$(Build.ArtifactStagingDirectory)/App2.Backend'
 
 - task: ArchiveFiles@2
+  displayName: Archive publish folders
   inputs:
     rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/App2.Backend'
     includeRootFolder: false
