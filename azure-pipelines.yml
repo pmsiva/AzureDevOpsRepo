@@ -15,6 +15,7 @@ variables:
 
 steps: 
 - task: DotNetCoreCLI@2
+  displayName: Build App2 Web
   inputs:
     command: 'build'
     projects: '**/*.csproj'
@@ -22,6 +23,7 @@ steps:
     versioningScheme: 'off'
 
 - task: DotNetCoreCLI@2
+  displayName: Publish App2 Web
   inputs:
     command: publish
     projects: '**/*.csproj'
@@ -29,8 +31,16 @@ steps:
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
 
-- task: S3Upload@1
+- task: CopyFiles@2
+  displayName: Copy AWS CodeDeploy files
   inputs:
+      SourceFolder: 'Deployment'
+      Contents: '**/*'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: S3Upload@1
+  displayName: Upload Package to S3
+  inputs:  
     awsCredentials: 'App2-S3-Build-Package'
     regionName: 'ap-southeast-2'
     bucketName: 'app2-package'
