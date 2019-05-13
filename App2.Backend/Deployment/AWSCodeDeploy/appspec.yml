@@ -3,3 +3,13 @@ os: linux
 files:
   - source: /
     destination: /var/www/App2
+    
+hooks:  
+  BeforeInstall:
+    - location: BeforeInstall.sh
+      timeout: 60
+      runas: root
+  AfterInstall:
+    - location: AfterInstall.sh
+      timeout: 60
+      runas: root  
