@@ -1,4 +1,5 @@
 #!/bin/bash
 
-chmod +x /var/www/App2/App2.Backend.dll
-dotnet /var/www/App2/App2.Backend.dll
+sudo systemctl daemon-reload
+sudo systemctl enable kestrel-App2.service
+sudo systemctl start kestrel-App2.service
