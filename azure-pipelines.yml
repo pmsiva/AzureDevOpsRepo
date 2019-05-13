@@ -15,7 +15,7 @@ variables:
 
 steps: 
 - task: DotNetCoreCLI@2
-displayName: Build App2 Web
+  displayName: Build App2 Web
   inputs:
     command: 'build'
     projects: '**/*.csproj'
@@ -39,7 +39,7 @@ displayName: Build App2 Web
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: S3Upload@1
-displayName: Upload Package to S3
+  displayName: Upload Package to S3
   inputs:  
     awsCredentials: 'App2-S3-Build-Package'
     regionName: 'ap-southeast-2'
