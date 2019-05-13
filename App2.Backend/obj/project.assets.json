@@ -11894,11 +11894,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Working Folder\\Learning\\Mobile-Development\\MyFirstMobileApp\\App2.Backend\\App2.Backend.csproj",
+      "projectUniqueName": "C:\\Working Folder\\GitRepos\\AzureDevOpsRepo\\App2.Backend\\App2.Backend.csproj",
       "projectName": "App2.Backend",
-      "projectPath": "C:\\Working Folder\\Learning\\Mobile-Development\\MyFirstMobileApp\\App2.Backend\\App2.Backend.csproj",
+      "projectPath": "C:\\Working Folder\\GitRepos\\AzureDevOpsRepo\\App2.Backend\\App2.Backend.csproj",
       "packagesPath": "C:\\Users\\2748\\.nuget\\packages\\",
-      "outputPath": "C:\\Working Folder\\Learning\\Mobile-Development\\MyFirstMobileApp\\App2.Backend\\obj\\",
+      "outputPath": "C:\\Working Folder\\GitRepos\\AzureDevOpsRepo\\App2.Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",

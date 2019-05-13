@@ -12,7 +12,8 @@ namespace App2.Backend.Controllers
         {
             var todoList = new List<ToDoItem>()
             {
-                new ToDoItem { Id = 1, Name = "Item 1" }
+                new ToDoItem { Id = 1, Name = "Item 1" },
+                new ToDoItem { Id = 2, Name = "Item 2" }
             };
 
             return Ok(todoList);
