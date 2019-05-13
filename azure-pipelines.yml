@@ -34,7 +34,7 @@ steps:
 - task: CopyFiles@2
   displayName: Copy AWS CodeDeploy files
   inputs:
-      SourceFolder: 'Deployment/AWSCodeDeploy'
+      SourceFolder: 'App2.Backend/Deployment/AWSCodeDeploy'
       Contents: '**/*'
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
