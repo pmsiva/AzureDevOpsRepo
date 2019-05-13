@@ -29,7 +29,7 @@ steps:
     projects: '**/*.csproj'
     publishWebProjects: false
     arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: true
+    zipAfterPublish: false
 
 - task: CopyFiles@2
   displayName: Copy AWS CodeDeploy files
@@ -37,6 +37,12 @@ steps:
       SourceFolder: 'Deployment/AWSCodeDeploy'
       Contents: '**/*'
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
 - task: S3Upload@1
   displayName: Upload Package to S3
