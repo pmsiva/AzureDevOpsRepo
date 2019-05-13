@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/app2     
+hooks:
+  ApplicationStop:
+    - location: ApplicationStop.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: BeforeInstall.sh
+      timeout: 60
+      runas: root
+  AfterInstall:
+    - location: AfterInstall.sh
+      timeout: 60
+      runas: root
+  ApplicationStart:
+    - location: ApplicationStart.sh
+      timeout: 180
+      runas: root
