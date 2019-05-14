@@ -54,6 +54,5 @@ steps:
     regionName: 'ap-southeast-2'
     bucketName: 'app2-package'
     sourceFolder: '$(Build.ArtifactStagingDirectory)/setup'
-    globExpressions: '**'
-    targetFolder: 'package-app2'
+    globExpressions: '**'    
     Overwrite: true
