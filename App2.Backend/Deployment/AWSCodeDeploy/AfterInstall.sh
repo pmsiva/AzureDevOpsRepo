@@ -1,3 +1,5 @@
 #!/bin/bash
 
-sudo systemctl daemon-reload
+command="systemctl daemon-reload"
+eval " $command
+

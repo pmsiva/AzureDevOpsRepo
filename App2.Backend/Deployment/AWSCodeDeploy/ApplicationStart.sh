@@ -1,4 +1,8 @@
 #!/bin/bash
 
-sudo systemctl enable kestrel-App2.service
-sudo systemctl start kestrel-App2.service
+
+command="systemctl enable kestrel-App2.service"
+eval " $command"
+
+command="systemctl start kestrel-App2.service"
+eval " $command"
