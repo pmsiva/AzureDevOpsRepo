@@ -44,7 +44,7 @@ steps:
     rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/App2.Backend'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/setup/$App2-setup.zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/setup/App2-setup.zip'
     replaceExistingArchive: true
 
 - task: S3Upload@1
