@@ -5,7 +5,15 @@ files:
     destination: /var/www/App2
 
 hooks:    
-  BeforeInstall:
+ ApplicationStop:
+    - location: ApplicationStop.sh
+      timeout: 60
+      runas: root
+ ApplicationStart:
+    - location: ApplicationStart.sh
+      timeout: 90
+      runas: root
+ BeforeInstall:
     - location: BeforeInstall.sh
       timeout: 60
       runas: root
