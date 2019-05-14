@@ -8,5 +8,5 @@
 #eval " $command"
 
 
-systemctl enable kestrel-App2.service
-systemctl start kestrel-App2.service
+sudo systemctl enable kestrel-App2.service
+sudo systemctl start kestrel-App2.service
